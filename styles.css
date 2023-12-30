@@ -1,0 +1,45 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+}
+
+#countdown {
+    font-size: 2em;
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#countdown:hover {
+    transform: scale(1.1);
+}
+
+#countdown::before {
+    content: '\1F31E'; /* Unicode character for a sun (customize as needed) */
+    font-size: 3em;
+    margin-right: 10px;
+}
+
+#countdown::after {
+    content: '\1F4C5'; /* Unicode character for a calendar (customize as needed) */
+    font-size: 3em;
+    margin-left: 10px;
+}
